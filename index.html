@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radar chart 2</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-radar.min.js"></script>
+  </head>
+  <body>
+    <h1 class="ms-4 myProfile">MY PROFILE</h1>
+    <div class="d-flex">
+    <div class="card leftProfile w-25 ms-4">
+      <div class="card-body px-0">
+         <img class="rounded mx-auto d-block" src="profile-pic.png" alt="profile-pic"/>
+         <h2 class="text-center username">Jem Tan</h2>
+         <p class="text-center level">Level 1</p>
+         <div class="progress-level">
+          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <img class="rounded float-left p-3" src="coin.png" alt="coin"/>
+      </div>
+    </div>
+    <div class="rightProfile w-75 card mx-4">
+      <div class="d-flex justify-content-between p-2 pb-0">
+        <h3 class="personality">Personality trails</h3>
+        <button id="btn" class="btn-success"><img src="bar-chart-icon.png" class="bar-chart" alt="chart icon"></button>
+      </div>
+      <div id="progress">
+        <div class="row">
+          <div class="card-left col-6">
+            <h5 class="t-5">TOP FIVE CHARACTERISTICS</h5>
+            <div class="number">
+              <span class="nbr">1</span>
+              <div class="characteristics">
+                <div><span>Intellect</span><span class="progress_percent">0.9</span></div>
+                <div class="progress">
+                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="number">
+              <span class="nbr">2</span>
+              <div class="characteristics">
+                <div><span>Activity Level / Energetic</span><span class="progress_percent">0.85</span></div>
+                <div class="progress">
+                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="number">
+              <span class="nbr">1</span>
+              <div class="characteristics">
+                <div><span>Intellect</span><span class="progress_percent">0.9</span></div>
+                <div class="progress">
+                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="number">
+              <span class="nbr">1</span>
+              <div class="characteristics">
+                <div><span>Intellect</span><span class="progress_percent">0.9</span></div>
+                <div class="progress">
+                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="number">
+              <span class="nbr">1</span>
+              <div class="characteristics">
+                <div><span>Intellect</span><span class="progress_percent">0.9</span></div>
+                <div class="progress">
+                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="line"></div> -->
+          <div class="card-right col-6">
+            <h5 class="b-5">BOTTOM FIVE CHARACTERISTICS</h5>
+            <div class="number">
+              <span class="nbr">1</span>
+              <div class="characteristics">
+                <div><span>Intellect</span><span class="progress_percent">0.9</span></div>
+                <div class="progress">
+                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="number">
+              <span class="nbr">1</span>
+              <div class="characteristics">
+                <div><span>Intellect</span><span class="progress_percent">0.9</span></div>
+                <div class="progress">
+                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div><div class="number">
+              <span class="nbr">1</span>
+              <div class="characteristics">
+                <div><span>Intellect</span><span class="progress_percent">0.9</span></div>
+                <div class="progress">
+                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div><div class="number">
+              <span class="nbr">1</span>
+              <div class="characteristics">
+                <div><span>Intellect</span><span class="progress_percent">0.9</span></div>
+                <div class="progress">
+                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div><div class="number">
+              <span class="nbr">1</span>
+              <div class="characteristics">
+                <div><span>Intellect</span><span class="progress_percent">0.9</span></div>
+                <div class="progress">
+                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chart show" id="container"></div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <button class="Cds mt-3">Speak to Career Digital assistant</button>
+  </div>
+  
+    <script src="index.js"></script>
+  </body>
+</html>

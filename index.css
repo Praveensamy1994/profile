@@ -1,0 +1,102 @@
+html, body, #container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#container.chart{
+  display: none;
+  height: 500px;
+}
+
+.myProfile, .username{
+  font-family: Raleway;
+  font-weight: bold;
+  /* font-size: 24px; */
+}
+.personality{
+font-family: Raleway;
+/* font-size: 15px; */
+font-weight: 700;
+color:#767676;
+
+}
+.level{
+  font-family: Raleway;
+font-size: 19px;
+font-weight: 400;
+}
+.t-5, .b-5{
+  font-family: Raleway;
+/* font-size: 15px; */
+font-weight: 700;
+color:#767676;
+;
+
+}
+#progress{
+  display: none;
+}
+
+div.show {
+  display: block !important;
+}
+
+.btn-success{
+  background: none;
+  border: 0;
+  text-align: right;
+  padding: 5px;
+}
+
+.number{
+  display: flex;
+    align-items: center;
+}
+
+.nbr{
+  background-color: orange;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+.characteristics{
+  display: inline-block;
+    width: 90%;
+}
+
+.progress_percent{
+  float: right;
+}
+
+.line {   
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  border-right: 1px dashed #ccc;
+}
+.card-left{
+  border-right: solid 1px gray;
+}
+.leftProfile, .rightProfile{
+  /* display: inline-block;
+  float: left; */
+}
+
+.progress-level{
+  border-bottom: solid 1px gray;
+
+}
+.Cds{
+  background-color: #E45539;
+  border:#E45539;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Raleway;
+font-size: 18px;
+font-weight: 700;
+color: #FFF;
+}
